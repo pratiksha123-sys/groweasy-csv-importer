@@ -12,6 +12,8 @@ https://groweasy-csv-importer-one-bay.vercel.app
 ### Backend API (Render)
 https://groweasy-csv-importer-54w2.onrender.com
 
+> **Note:** This is a backend API service. Visiting the root URL may display `Cannot GET /`, which is expected because it exposes API endpoints rather than a web interface.
+
 ### GitHub Repository
 https://github.com/pratiksha123-sys/groweasy-csv-importer
 
