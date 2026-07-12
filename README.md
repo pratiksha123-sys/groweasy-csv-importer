@@ -188,18 +188,16 @@ The application extracts the following CRM fields automatically:
 
 ---
 
-# API Configuration
+## API Configuration
 
-Create a `.env` file inside the backend folder.
-
-Example:
+Create a `.env` file inside the `backend` folder with the following variables:
 
 ```env
 PORT=5001
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-> Never upload your `.env` file to GitHub.
+> **Note:** Keep your `.env` file private and never commit or upload it to a public GitHub repository.
 
 ---
 
@@ -217,9 +215,6 @@ frontend/node_modules/
 ---
 
 # Future Improvements
-
-- Database Integration
-- User Authentication
 - Docker Support
 - Unit Testing
 - Dark Mode
@@ -242,4 +237,4 @@ https://github.com/pratiksha123-sys/groweasy-csv-importer
 
 Software Developer | AI & Machine Learning Enthusiast
 
-This project was developed as part of the **GrowEasy Software Developer Internship Assessment**.
+This project was developed as part of the **GrowEasy Software Developer Assessment**.
