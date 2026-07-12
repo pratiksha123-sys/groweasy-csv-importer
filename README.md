@@ -163,39 +163,19 @@ NEXT_PUBLIC_API_URL=https://groweasy-csv-importer-54w2.onrender.com
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-## Dashboard
+### Dashboard
+![Dashboard](dashboard.png)
 
-> Add Screenshot: `dashboard.png`
+### Upload CSV
+![Upload CSV](upload.png)
 
-![Dashboard](screenshots/dashboard.png)
+### Preview Imported Data
+![Preview](preview.png)
 
----
-
-## CSV Upload
-
-> Add Screenshot: `upload.png`
-
-![Upload](screenshots/upload.png)
-
----
-
-## CSV Preview
-
-> Add Screenshot: `preview.png`
-
-![Preview](screenshots/preview.png)
-
----
-
-## Imported CRM Data
-
-> Add Screenshot: `crm-table.png`
-
-![CRM](screenshots/crm-table.png)
-
----
+### CRM Table
+![CRM Table](crm-table.png)
 
 # 📌 Future Improvements
 
