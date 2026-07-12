@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://groweasy-csv-importer-54w2.onrender.com';
 
 export async function uploadCSVPreview(file: File) {
   const formData = new FormData();
