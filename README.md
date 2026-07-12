@@ -1,49 +1,65 @@
-# GrowEasy AI CSV Importer
+# 🚀 GrowEasy CSV Importer
 
-An AI-powered CSV Importer that intelligently extracts, maps, and converts CRM lead information from any valid CSV format into the GrowEasy CRM structure using Google Gemini AI.
-
----
-
-## 🚀 Features
-
-- Upload CSV files from multiple sources
-- Preview uploaded CSV data before processing
-- AI-powered intelligent field mapping using Google Gemini
-- Automatic extraction of CRM fields
-- Responsive and user-friendly interface
-- Displays:
-  - Successfully imported records
-  - Skipped records
-  - Total imported
-  - Total skipped
-- Handles different CSV formats without predefined column names
-- Graceful fallback processing when AI quota is exceeded
+An AI-powered CSV Lead Importer built with **Next.js**, **Node.js**, and **Express.js**. The application enables users to upload CSV files, preview parsed lead data, validate records, and import them into a CRM dashboard with a clean and responsive interface.
 
 ---
 
-## 🛠 Tech Stack
+## 🌐 Live Demo
+
+### Frontend (Vercel)
+https://groweasy-csv-importer-one-bay.vercel.app
+
+### Backend API (Render)
+https://groweasy-csv-importer-54w2.onrender.com
+
+### GitHub Repository
+https://github.com/pratiksha123-sys/groweasy-csv-importer
+
+---
+
+# ✨ Features
+
+- 📂 CSV File Upload
+- 👀 Preview Imported Records
+- ✅ Record Validation
+- 📊 Dashboard Overview
+- 👥 Lead Management
+- ⚡ Fast API Integration
+- 🌐 Responsive UI
+- ☁️ Cloud Deployment using Vercel & Render
+
+---
+
+# 🛠️ Tech Stack
 
 ### Frontend
-- Next.js 14
-- React
-- TypeScript
+- Next.js
+- React.js
 - Tailwind CSS
 
 ### Backend
 - Node.js
 - Express.js
-- Multer
-- CSV Parser
 
-### AI
-- Google Gemini API
+### Deployment
+- Vercel
+- Render
+
+### Version Control
+- Git & GitHub
 
 ---
 
-## 📂 Project Structure
+# 📁 Project Structure
 
-```text
-groweasy-csv-importer/
+```
+groweasy-csv-importer
+│
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── utils/
+│   └── package.json
 │
 ├── backend/
 │   ├── src/
@@ -52,23 +68,14 @@ groweasy-csv-importer/
 │   │   ├── utils/
 │   │   ├── routes.js
 │   │   └── server.js
-│   ├── package.json
-│   └── Dockerfile
+│   └── package.json
 │
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   ├── components/
-│   │   └── utils/
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── tailwind.config.js
-│
-├── .gitignore
 └── README.md
 ```
 
-# Installation
+---
+
+# ⚙️ Installation
 
 ## Clone Repository
 
@@ -80,34 +87,17 @@ cd groweasy-csv-importer
 
 ---
 
-# Backend Setup
-
-Navigate to the backend folder.
+## Backend Setup
 
 ```bash
 cd backend
-```
 
-Install dependencies.
-
-```bash
 npm install
+
+npm start
 ```
 
-Create a `.env` file.
-
-```env
-PORT=5001
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
-
-Start the backend server.
-
-```bash
-npm run dev
-```
-
-Backend URL:
+Runs on:
 
 ```
 http://localhost:5001
@@ -115,27 +105,17 @@ http://localhost:5001
 
 ---
 
-# Frontend Setup
-
-Open another terminal.
+## Frontend Setup
 
 ```bash
 cd frontend
-```
 
-Install dependencies.
-
-```bash
 npm install
-```
 
-Run the frontend.
-
-```bash
 npm run dev
 ```
 
-Frontend URL:
+Runs on:
 
 ```
 http://localhost:3000
@@ -143,106 +123,102 @@ http://localhost:3000
 
 ---
 
-# How to Use
+# 🔑 Environment Variables
 
-### Step 1
+## Backend
 
-Upload any valid CSV file.
-
-Supported examples:
-
-- Facebook Lead Export
-- Google Ads Export
-- Excel Files
-- CRM Exports
-- Sales Reports
-- Custom CSV Files
-
-### Step 2
-
-Preview the uploaded CSV before importing.
-
-### Step 3
-
-Click **Confirm Import**.
-
-The backend processes the CSV using Google Gemini AI and maps the data into GrowEasy CRM fields.
-
-### Step 4
-
-View the extracted CRM records along with import statistics.
-
----
-
-# CRM Fields
-
-The application extracts the following CRM fields automatically:
-
-- created_at
-- name
-- email
-- country_code
-- mobile_without_country_code
-- company
-- city
-- state
-- country
-- lead_owner
-- crm_status
-- crm_note
-- data_source
-- possession_time
-- description
-
----
-
-## API Configuration
-
-Create a `.env` file inside the `backend` folder with the following variables:
+Create a `.env` file inside the backend folder.
 
 ```env
 PORT=5001
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
-
-> **Note:** Keep your `.env` file private and never commit or upload it to a public GitHub repository.
-
----
-
-# Security
-
-Add the following entries to your `.gitignore` file.
-
-```gitignore
-backend/.env
-backend/node_modules/
-frontend/node_modules/
-.next/
 ```
 
 ---
 
-# Future Improvements
-- Docker Support
-- Unit Testing
-- Dark Mode
-- Progress Indicators
-- AI Prompt Optimization
+## Frontend
+
+Create a `.env.local` file inside the frontend folder.
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5001
+```
+
+For production:
+
+```env
+NEXT_PUBLIC_API_URL=https://groweasy-csv-importer-54w2.onrender.com
+```
 
 ---
 
-# Repository
+# 🚀 Usage
 
-GitHub Repository:
-
-https://github.com/pratiksha123-sys/groweasy-csv-importer
+1. Open the application.
+2. Click **Import Leads**.
+3. Upload a CSV file.
+4. Preview the parsed records.
+5. Validate the imported data.
+6. Click **Confirm & Import to CRM**.
+7. View imported records on the dashboard.
 
 ---
 
-# Author
+# 📸 Screenshots
+
+## Dashboard
+
+> Add Screenshot: `dashboard.png`
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## CSV Upload
+
+> Add Screenshot: `upload.png`
+
+![Upload](screenshots/upload.png)
+
+---
+
+## CSV Preview
+
+> Add Screenshot: `preview.png`
+
+![Preview](screenshots/preview.png)
+
+---
+
+## Imported CRM Data
+
+> Add Screenshot: `crm-table.png`
+
+![CRM](screenshots/crm-table.png)
+
+---
+
+# 📌 Future Improvements
+
+- User Authentication
+- Database Integration
+- Bulk Import Support
+- Search & Filters
+- Export CSV
+- AI Field Mapping
+- Import History
+- Role-Based Access
+
+---
+
+# 👩‍💻 Author
 
 **Pratiksha Kote**
 
-Software Developer | AI & Machine Learning Enthusiast
+GitHub:
+https://github.com/pratiksha123-sys
 
-This project was developed as part of the **GrowEasy Software Developer Assessment**.
+---
+
+# 📄 License
+
+This project was developed as part of a technical assessment and is intended for learning and evaluation purposes.
