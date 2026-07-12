@@ -1,20 +1,23 @@
 # GrowEasy AI CSV Importer
 
-An AI-powered CRM Lead Importer that intelligently extracts, maps, and converts lead information from CSV files into the GrowEasy CRM format using Google Gemini AI.
+An AI-powered CSV Importer that intelligently extracts, maps, and converts CRM lead information from any valid CSV format into the GrowEasy CRM structure using Google Gemini AI.
+
+---
 
 ## 🚀 Features
 
-- Upload CSV files from different sources
+- Upload CSV files from multiple sources
 - Preview uploaded CSV data before processing
 - AI-powered intelligent field mapping using Google Gemini
-- Automatic CRM field extraction
-- Responsive and modern user interface
+- Automatic extraction of CRM fields
+- Responsive and user-friendly interface
 - Displays:
   - Successfully imported records
   - Skipped records
   - Total imported
   - Total skipped
-- Local fallback processing when AI quota is exceeded
+- Handles different CSV formats without predefined column names
+- Graceful fallback processing when AI quota is exceeded
 
 ---
 
@@ -52,52 +55,51 @@ groweasy-csv-importer/
 │   ├── package.json
 │   └── next.config.js
 │
-├── README.md
 └── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# Installation
 
-### Clone Repository
+## Clone Repository
 
 ```bash
-pratiksha123-sys/groweasy-csv-importer
+git clone https://github.com/pratiksha123-sys/groweasy-csv-importer.git
 
 cd groweasy-csv-importer
 ```
 
 ---
 
-## Backend Setup
+# Backend Setup
 
-Navigate to backend
+Navigate to the backend folder.
 
 ```bash
 cd backend
 ```
 
-Install dependencies
+Install dependencies.
 
 ```bash
 npm install
 ```
 
-Create a `.env` file
+Create a `.env` file.
 
 ```env
 PORT=5001
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-Start backend
+Start the backend server.
 
 ```bash
 npm run dev
 ```
 
-Backend runs at
+Backend URL:
 
 ```
 http://localhost:5001
@@ -105,27 +107,27 @@ http://localhost:5001
 
 ---
 
-## Frontend Setup
+# Frontend Setup
 
-Open another terminal
+Open another terminal.
 
 ```bash
 cd frontend
 ```
 
-Install dependencies
+Install dependencies.
 
 ```bash
 npm install
 ```
 
-Start frontend
+Run the frontend.
 
 ```bash
 npm run dev
 ```
 
-Frontend runs at
+Frontend URL:
 
 ```
 http://localhost:3000
@@ -133,51 +135,40 @@ http://localhost:3000
 
 ---
 
-## 📋 Usage
+# How to Use
 
 ### Step 1
 
-Upload any CSV file.
+Upload any valid CSV file.
 
 Supported examples:
 
-- Facebook Lead Ads
-- Google Ads
+- Facebook Lead Export
+- Google Ads Export
 - Excel Files
 - CRM Exports
+- Sales Reports
 - Custom CSV Files
 
 ### Step 2
 
-Preview uploaded CSV before importing.
+Preview the uploaded CSV before importing.
 
 ### Step 3
 
 Click **Confirm Import**.
 
-The backend processes the CSV using Google Gemini AI.
+The backend processes the CSV using Google Gemini AI and maps the data into GrowEasy CRM fields.
 
 ### Step 4
 
-View extracted CRM records including:
-
-- Lead Name
-- Email
-- Mobile Number
-- Company
-- City
-- State
-- Country
-- Lead Status
-- Notes
-- Data Source
-- Description
+View the extracted CRM records along with import statistics.
 
 ---
 
-## CRM Fields
+# CRM Fields
 
-The application extracts the following fields automatically:
+The application extracts the following CRM fields automatically:
 
 - created_at
 - name
@@ -197,7 +188,7 @@ The application extracts the following fields automatically:
 
 ---
 
-## API Configuration
+# API Configuration
 
 Create a `.env` file inside the backend folder.
 
@@ -208,13 +199,13 @@ PORT=5001
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-> **Do not upload your `.env` file to GitHub.**
+> Never upload your `.env` file to GitHub.
 
 ---
 
-## Security
+# Security
 
-Add the following to `.gitignore`
+Add the following entries to your `.gitignore` file.
 
 ```gitignore
 backend/.env
@@ -225,26 +216,30 @@ frontend/node_modules/
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-- User Authentication
 - Database Integration
-- Deployment with Docker
+- User Authentication
+- Docker Support
 - Unit Testing
-- AI Prompt Optimization
 - Dark Mode
 - Progress Indicators
+- AI Prompt Optimization
 
 ---
 
-## Author
+# Repository
+
+GitHub Repository:
+
+https://github.com/pratiksha123-sys/groweasy-csv-importer
+
+---
+
+# Author
 
 **Pratiksha Kote**
 
 Software Developer | AI & Machine Learning Enthusiast
-
----
-
-## License
 
 This project was developed as part of the **GrowEasy Software Developer Internship Assessment**.
