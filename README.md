@@ -47,18 +47,26 @@ groweasy-csv-importer/
 │
 ├── backend/
 │   ├── src/
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── routes.js
+│   │   └── server.js
 │   ├── package.json
-│   └── .env.example
+│   └── Dockerfile
 │
 ├── frontend/
 │   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   └── utils/
 │   ├── package.json
-│   └── next.config.js
+│   ├── tsconfig.json
+│   └── tailwind.config.js
 │
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
-
----
 
 # Installation
 
